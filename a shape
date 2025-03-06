@@ -1,0 +1,10 @@
+def shape(number1,char1,number2,char2):
+    i = 1
+    while i <= number1:
+        print(char1 * i)
+        i += 1
+    for i in range(number2):
+        print(number1*char2)
+shape(3,"x",5,"+")
+print()
+shape(4,"/",3,"-")
