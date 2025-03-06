@@ -1,0 +1,9 @@
+def draw_line(number,word):
+    if not word:
+        word="*"
+    else:
+        word=word[0]
+    print(number*word)
+draw_line(2,"%")
+draw_line(3,"LOL")
+draw_line(4,"")    
