@@ -1,0 +1,10 @@
+def spruce(number):
+    print(" "*(number-3)+"a spruce!")
+    i=number
+    row = "*"
+    while i > 0:
+        print(" " * (i-1) + row)
+        row += "**"
+        i -= 1
+    print(" "*(number-1)+"*")
+spruce(5)
