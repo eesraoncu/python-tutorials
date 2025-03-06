@@ -1,0 +1,6 @@
+def hash_square(length):
+  for i in range(length):
+    print('#' * length)
+hash_square(5)
+print()
+hash_square(3)
