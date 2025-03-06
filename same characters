@@ -1,0 +1,7 @@
+def same_characters(word,number1,number2):
+    if word[number1]==word[number2]:
+        print("true")
+        return True
+    else:
+        return False
+same_characters("emma",1,2)
