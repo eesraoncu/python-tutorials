@@ -1,0 +1,14 @@
+def lenght_of_array(my_list):
+ result=len(my_list)
+ print("the lenght is ",result)
+lenght_of_array([4,8,9,7,5,6]) #finding the lenght of a list
+"*************************************"
+def arithmetic_mean(my_list):
+    mean=sum(my_list)/len(my_list)
+    print("mean value is ",mean)
+arithmetic_mean([4,8,9,7,5,6]) #finding the mean of a list
+"**************************************"
+def range_of_list(my_list):
+    range=max(my_list)-min(my_list)
+    print("the range is ",range)
+range_of_list([4,8,9,7,5,6]) #finding the range of a list
