@@ -1,0 +1,9 @@
+number_list=[]
+while True:
+    number=(int(input("Enter a number: ")))
+    if number==0:
+        print("bye")
+        break
+    number_list.append(number)
+    print(number_list)
+    print(sorted(number_list))
