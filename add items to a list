@@ -1,0 +1,5 @@
+numbers=[]
+items=int(input("how many items will you enter: "))
+for i in range(items):
+    numbers.append(int(input("Enter a number: ")))
+print(numbers)
