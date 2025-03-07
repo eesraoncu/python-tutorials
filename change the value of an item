@@ -1,0 +1,9 @@
+numbers=[7,5,2,6,9]
+while True:
+ index=int(input("Enter an index: "))
+ if index==-1:
+     print("Invalid index")
+     break
+ new_value=int(input("Enter a new value: "))
+ numbers[index]=new_value
+print(numbers)
