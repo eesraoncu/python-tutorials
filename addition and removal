@@ -1,0 +1,18 @@
+my_list=[]
+while True:
+ choice=input("Do you want to add to the list, remove from the list or exit?")
+ if choice=="add":
+    my_list.append(int(input("Enter a number: ")))
+    print("updated list:",my_list)
+ elif choice=="remove":
+    item=int(input("Enter a number: "))
+    if item in my_list:
+        my_list.remove(item)
+    else:
+     print("item not found in the list")
+    print("updated list:",my_list)
+ elif choice=="exit":
+    print("program terminated")
+    break
+ else:
+    print("invalid input")
