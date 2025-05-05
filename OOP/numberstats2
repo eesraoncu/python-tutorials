@@ -1,0 +1,35 @@
+class NumberStats:
+    def __init__(self):
+        self.count = 0
+        self.total = 0
+    def add_number(self, number: int):
+        self.count += 1
+        self.total += number
+
+    def count_numbers(self):
+        return self.count
+
+    def sum_numbers(self):
+        return self.total
+
+    def average(self):
+        if self.count == 0:
+            return 0
+        return self.total / self.count
+stats_all = NumberStats()
+stats_even = NumberStats()
+stats_odd = NumberStats()
+print("Please type in integer numbers:")
+while True:
+    number = int(input())
+    if number == -1:
+        break
+    stats_all.add_number(number)
+    if number % 2 == 0:
+        stats_even.add_number(number)
+    else:
+        stats_odd.add_number(number)
+print(f"Sum of numbers: {stats_all.sum_numbers()}")
+print(f"Mean of numbers: {stats_all.average()}")
+print(f"Sum of even numbers: {stats_even.sum_numbers()}")
+print(f"Sum of odd numbers: {stats_odd.sum_numbers()}")
