@@ -1,0 +1,14 @@
+import random
+def words(n:int,beginning:str):
+    with open("words.txt") as file:
+        all_words=[line.strip() for line in file]
+    random.shuffle(all_words)
+    result=[]
+    for word in all_words:
+        if word.startswith(beginning):
+            result.append(word)
+            if len(result)==n:
+                break
+    if len(result)<n:
+        raise ValueError("not enough words")
+    return result
