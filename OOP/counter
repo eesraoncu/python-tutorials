@@ -1,0 +1,29 @@
+class DecreasingCounter:
+    def __init__(self, initial_value: int):
+        self.initial_value=initial_value
+        self.value=initial_value
+
+    def print_value(self):
+        print("value:", self.value)
+
+    def decrease(self):
+        self.value -= 1
+        if self.value < 0:
+            print("sıfıra ulaştınız")
+            self.value = 0
+
+    def reset(self):
+        self.value = 0
+
+    def increase(self,num=1):
+        self.value += num
+
+    def reset_original_value(self):
+        self.value = self.initial_value
+
+counter = DecreasingCounter(10)
+counter.print_value()
+counter.decrease()
+counter.print_value()
+counter.reset_original_value()
+counter.print_value()
