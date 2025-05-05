@@ -1,0 +1,38 @@
+class ShoppingList:
+    def __init__(self):
+        self.items=[]
+    def add_item(self,item:str,amount:int):
+        self.items.append((item,amount))
+    def number_of_items(self):
+        return len(self.items)
+    def item(self, n):
+        if 1<=n<= len(self.items):
+            return self.items[n-1][0]
+        else:
+            return None
+    def amount(self,n):
+        if 1<=n<=len(self.items):
+            return self.items[n-1][1]
+        else:
+            return None
+
+shopping_list = ShoppingList()
+shopping_list.add_item("Bananas", 4)
+shopping_list.add_item("Milk", 1)
+
+print(shopping_list.number_of_items())  # 2
+print(shopping_list.item(1))           # Bananas
+print(shopping_list.amount(1))         # 4
+print(shopping_list.item(2))           # Milk
+print(shopping_list.amount(2))         # 1
+
+def total_units(my_list:ShoppingList):
+    total=0
+    for item,amount in my_list.items:
+        total += amount
+    return total
+if __name__=="__main__":
+    my_list = ShoppingList()
+    my_list.add_item("Bananas", 4)
+    my_list.add_item("Milk", 1)
+    print(total_units(my_list))
