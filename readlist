@@ -1,0 +1,14 @@
+def read_list(n):
+    list=[]
+    for i in range(n):
+      while True:
+        try:
+            input_str = input(f"Please type{i+1} in an integer: ")
+            list[i].append(int(input_str))
+            break
+        except ValueError:
+            print("This input is invalid")
+    return list
+array = read_list(3)
+print("Thank you!")
+print(array, "to the power of three is", array**3)
