@@ -1,0 +1,69 @@
+def add_student(students: dict, name: str):
+    if name in students:
+        print("student already exists")
+    else:
+        students[name] = []
+def add_course(students: dict, name: str, course: tuple):
+    if name not in students:
+        return
+    course_name, new_grade = course
+    if new_grade == 0:
+        return
+    courses = students[name]
+    for i, (existing_course_name, existing_grade) in enumerate(courses):
+        if existing_course_name == course_name:
+            if new_grade > existing_grade:
+                courses[i] = (course_name, new_grade)
+            return
+    courses.append(course)
+def print_student(students: dict, name: str):
+    if name not in students:
+        print(name, "no such person in the database")
+        return
+    courses = students[name]
+    print(f"{name}:")
+    if not courses:
+        print(" no completed courses")
+    else:
+        print(f" {len(courses)} completed courses:")
+        total_grade = 0
+        for course_name, grade in courses:
+            print(f"  {course_name} {grade}")
+            total_grade += grade
+        average = total_grade / len(courses)
+        print(f" average grade {average:.1f}")
+
+def summary(students: dict):
+    print(f"öğrenciler {len(students)}")
+
+    most_courses = 0
+    most_courses_student = ""
+    best_average = 0
+    best_average_student = ""
+
+    for name, courses in students.items():
+        if not courses:
+            continue
+        course_count = len(courses)
+        average = sum(grade for _, grade in courses) / course_count
+
+        if course_count > most_courses:
+            most_courses = course_count
+            most_courses_student = name
+
+        if average > best_average:
+            best_average = average
+            best_average_student = name
+
+    print(f"çoğu kurs tamamlandı {most_courses} {most_courses_student}")
+    print(f"en iyi ortalama not {best_average:.1f} {best_average_student}")
+
+students = {}
+add_student(students, "Peter")
+add_student(students, "Eliza")
+add_course(students, "Peter", ("Data Structures and Algorithms", 1))
+add_course(students, "Peter", ("Introduction to Programming", 1))
+add_course(students, "Peter", ("Advanced Course in Programming", 1))
+add_course(students, "Eliza", ("Introduction to Programming", 5))
+add_course(students, "Eliza", ("Introduction to Computer Science", 4))
+summary(students)"""
