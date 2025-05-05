@@ -1,0 +1,32 @@
+def dict_of_numbers():
+    birler = {
+        0: "sıfır", 1: "bir", 2: "iki", 3: "üç", 4: "dört",
+        5: "beş", 6: "altı", 7: "yedi", 8: "sekiz", 9: "dokuz"
+    }
+    onlar = {
+        1: "on", 2: "yirmi", 3: "otuz", 4: "kırk", 5: "elli",
+        6: "altmış", 7: "yetmiş", 8: "seksen", 9: "doksan"
+    }
+    numbers_dict = {}
+    for i in range(0, 100):
+        if i < 10:
+            numbers_dict[i] = birler[i]
+        elif 10 <= i < 20:
+            if i == 10:
+                numbers_dict[i] = "on"
+            else:
+                numbers_dict[i] = "on " + birler[i % 10]
+        else:
+            onlar_bas = i // 10
+            birler_bas = i % 10
+            if birler_bas == 0:
+                numbers_dict[i] = onlar[onlar_bas]
+            else:
+                numbers_dict[i] = onlar[onlar_bas] + " " + birler[birler_bas]
+    return numbers_dict
+numbers = dict_of_numbers()
+print(numbers[2])
+print(numbers[11])
+print(numbers[45])
+print(numbers[99])
+print(numbers[0])
