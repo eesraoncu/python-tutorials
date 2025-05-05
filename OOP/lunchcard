@@ -1,0 +1,35 @@
+class LunchCard:
+    def __init__(self,balance:float):
+        self.balance=balance
+
+    def eat_lunch(self):
+        self.balance=self.balance-2.60
+
+    def eat_special(self):
+        self.balance=self.balance-4.60
+
+    try:
+       def deposit_money(self,deposit:float):
+           self.balance=self.balance+deposit
+           if deposit < 0:
+               print("Deposit cannot be negative!")
+    except ValueError:
+        print("Please enter a number!")
+
+    def __str__(self):
+        return f"Balance: {self.balance:.1f}"
+peters_card = LunchCard(20)
+graces_card=LunchCard(30)
+peters_card.eat_special()
+print("peter: ",peters_card.balance)
+graces_card.eat_lunch()
+print("grace: ",graces_card.balance)
+peters_card.deposit_money(20)
+print("peter: ",peters_card.balance)
+graces_card.eat_special()
+print("grace: ",graces_card.balance)
+peters_card.eat_lunch()
+peters_card.eat_lunch()
+print("peter: ",peters_card.balance)
+graces_card.deposit_money(50)
+print("grace: ",graces_card.balance)
