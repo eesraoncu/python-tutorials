@@ -1,0 +1,33 @@
+from datetime import datetime
+def is_it_valid(pic:str) -> bool:
+    if len(pic)!=11:
+        return False
+    date_part=pic[:6]
+    century_marker=pic[6]
+    individual_number=pic[7:10]
+    control_char=pic[10]
+    if century_marker=='+':
+        century=1800
+    elif century_marker=='-':
+        century=1900
+    elif century_marker=='A':
+        century=2000
+    else:
+        return False
+    try:
+        day=int(date_part[:2])
+        month=int(date_part[2:4])
+        year=int(date_part[4:6])
+        full_year=century+year
+        datetime(full_year,month,day)
+    except:
+        return False
+    identifier_number=date_part+individual_number
+    remainder=int(identifier_number)%31
+    control_table="0123456789ABCDEFHJKLMNPRSTUVWXY"
+    expected_char=control_table[remainder]
+    return control_char==expected_char
+print(is_it_valid("230827-906F"))
+print(is_it_valid("120488+246L"))
+print(is_it_valid("310823A9877"))
+print(is_it_valid("010101-1234"))
