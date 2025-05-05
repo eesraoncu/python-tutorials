@@ -1,0 +1,27 @@
+class NumberStats:
+    def __init__(self):
+        self.count = 0
+        self.total = 0
+    def add_number(self, number: int):
+        self.count += 1
+        self.total += number
+
+    def count_numbers(self):
+        return self.count
+
+    def sum_numbers(self):
+        return self.total
+
+    def average(self):
+        if self.count == 0:
+            return 0
+        return self.total / self.count
+
+stats = NumberStats()
+stats.add_number(3)
+stats.add_number(5)
+stats.add_number(1)
+stats.add_number(2)
+print("Numbers added:", stats.count_numbers())
+print("Sum of numbers:", stats.sum_numbers()
+print("Mean of numbers:", stats.average())
