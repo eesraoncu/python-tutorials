@@ -1,0 +1,10 @@
+def remove_smallest(numbers:list):
+    min=numbers[0]
+    for item in numbers:
+        if item < min:
+            min=item
+    numbers.remove(min)
+if __name__ == "__main__":
+    numbers = [2, 4, 6, 1, 3, 5]
+    remove_smallest(numbers)
+    print(numbers)
