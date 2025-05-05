@@ -1,0 +1,17 @@
+from random import randint
+def check(val,list_dizi):
+  if val in list_dizi:
+    return False
+  else:
+    return True
+def lottery_numbers(amount:int,lower:int,upper:int):
+  list_dizi = []
+  for i in range(amount):
+    while True:
+      val = randint(lower,upper)
+      if check(val,list_dizi):
+        list_dizi.append(val)
+        break
+  list_dizi.sort()
+  return list_dizi
+print(lottery_numbers(7,1,40))
