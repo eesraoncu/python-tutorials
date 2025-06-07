@@ -40,6 +40,6 @@ Each folder corresponds to a "Part" from the course and includes:
 - Anyone looking for structured practice
 ## ✨ Author
 
-Developed by **[Esra Öncü]** – a Software Engineering student.
+Developed by **Esra Öncü** – a Software Engineering student.
 
 🔗 [LinkedIn](http://linkedin.com/in/esraöncü)
