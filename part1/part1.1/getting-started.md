@@ -36,7 +36,7 @@ python filename.py
 ### 📤 The print() Function
 The print() function displays text or values on the screen.
 
-✅ **Examples:**
+✅ **Examples:**  
 print("Hello, world!")  
 print("Python is awesome!")  
 print(42)  
@@ -54,6 +54,7 @@ Create a Python file called hello.py and write the following:
 
 print("Hello, Python learner!")  
 print("This is my first Python file.")  
+
 Save and run the file using your chosen method (online or local).
 
 ✅ **What's Next?**
