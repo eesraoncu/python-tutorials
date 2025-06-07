@@ -33,7 +33,7 @@ To run code locally:
 python filename.py
 ```
 
-### 📤 The print() Function
+## 📤 The print() Function
 The print() function displays text or values on the screen.
 
 ✅ **Examples:**  
