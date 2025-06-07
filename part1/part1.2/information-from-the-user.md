@@ -1,4 +1,4 @@
-#**📝 Part 1.2 – Getting Information from the User**
+**#📝 Part 1.2 – Getting Information from the User**
 In this section, we learn how to get input from the user during program execution.
 This allows us to make our programs interactive and dynamic.
 
