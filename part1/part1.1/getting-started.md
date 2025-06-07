@@ -37,9 +37,9 @@ python filename.py
 The print() function displays text or values on the screen.
 
 ✅ **Examples:**
-print("Hello, world!")
-print("Python is awesome!")
-print(42)
+print("Hello, world!")  
+print("Python is awesome!")  
+print(42)  
 print("3 + 4 =", 3 + 4)
 
 🧠 **Notes:**
@@ -52,8 +52,8 @@ Multiple arguments can be separated by commas.
 ### 📝 **Practice Task (Try it yourself!)**
 Create a Python file called hello.py and write the following:
 
-print("Hello, Python learner!")
-print("This is my first Python file.")
+print("Hello, Python learner!")  
+print("This is my first Python file.")  
 Save and run the file using your chosen method (online or local).
 
 ✅ **What's Next?**
