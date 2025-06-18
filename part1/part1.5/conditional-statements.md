@@ -17,7 +17,7 @@ age = 20
 if age >= 18:
     print("You are an adult")
 ```
-## else Clause
+## `else` Clause
 Provides an alternative block if the condition is not met.
 ```
 if condition:
@@ -33,7 +33,7 @@ if age >= 18:
 else:
     print("Minor")
 ```
-## elif (Else If) Clause
+## `elif` (Else If) Clause
 Allows checking multiple conditions in sequence.
 ```
 if condition1:
@@ -57,17 +57,17 @@ else:
 ```
 ## Logical Operators
 You can combine multiple conditions using logical operators:
-### and – All conditions must be true
+### `and` – All conditions must be true
 ```
 if age > 12 and age < 18:
     print("Teenager")
 ```
-### or – At least one condition must be true
+### `or` – At least one condition must be true
 ```
 if age < 5 or age > 65:
     print("Eligible for discount")
 ```
-### not – Reverses the condition
+### `not` – Reverses the condition
 ```
 if not is_logged_in:
     print("Please log in")
