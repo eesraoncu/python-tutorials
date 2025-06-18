@@ -71,7 +71,7 @@ result = 10
 print("The result is " + result)  # ❌ TypeError
 ```
 ✅ Correct Ways:  
-1. Using str() conversion:
+1. Using str() conversion:  
 print("The result is " + str(result))  
 2. Using a comma:    
 print("The result is", result)
