@@ -50,7 +50,7 @@ print(word)
 - Python is case-sensitive: name, Name, and NAME are different variables  
 
 ## 5. Data Types
-Integers  
+### Integers  
 Whole numbers like -15, 0, 42:
 ```
 age = 24
