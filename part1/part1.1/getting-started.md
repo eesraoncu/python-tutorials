@@ -3,8 +3,6 @@
 Welcome! In this section, we will set the foundation for learning Python programming.  
 We’ll learn what Python is, how to write our first lines of code, and how to use `print()` for output.
 
----
-
 ## 🐍 What is Python?
 
 Python is a beginner-friendly, general-purpose programming language known for its simplicity and readability.  
