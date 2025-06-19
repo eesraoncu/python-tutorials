@@ -22,14 +22,16 @@ if number < 5 or number > 8:
 if not (number >= 5 and number <= 8):
     print("The number is not within the range of 5 to 8")
 ```
-### Boolean truth table
+### Boolean Truth Table
 
-a      b      a and b   a or b
-False  False  False     False
-True   False  False     True
-False  True   False     True
-True   True   True      True
-and not simply reverses True ↔ False. 
+| a     | b     | a and b | a or b |
+|-------|-------|----------|--------|
+| False | False | False    | False  |
+| True  | False | False    | True   |
+| False | True  | False    | True   |
+| True  | True  | True     | True   |
+
+> `not` simply reverses True ↔ False.
 
 ## 🔹 Simplified range check
 Python allows a mathematical shorthand for range inclusion:
