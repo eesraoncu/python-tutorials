@@ -24,7 +24,7 @@ while number < 10:
 - Use continue to skip the rest of the loop block and go to the next iteration.
 - Useful when a condition should ignore certain input values.
 
-## ✅ Exiting loops early with break
+## ✅ Exiting loops early with `break`
 Example: Exit on specific input
 ```
 while True:
