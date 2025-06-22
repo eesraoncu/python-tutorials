@@ -1,4 +1,4 @@
-# Part 3.3: More Loops - Summary
+# Part 3.3: More Loops
 
 This section deepens the understanding of loop structures in Python by exploring `while` loops, nested loops, and loop control mechanisms like `break` and `continue`.
 
