@@ -11,7 +11,7 @@ while number < 5:
     print(number)
     number += 1
 ```
-- Be careful of infinite loops! Ensure the condition will eventually become False.
+Be careful of infinite loops! Ensure the condition will eventually become False.
 
 ## 🔁 Loop Control: break and continue
 `break`
@@ -58,8 +58,5 @@ print("Sum:", total)
 - `while` loops are used when the number of iterations is not known in advance.
 - `break` exits a loop immediately, while `continue` skips the current iteration.
 - Nested loops are powerful for working with multi-dimensional data.
-
-Carefully controlling loop conditions avoids infinite loops.
-
-Loops are essential tools for building interactive programs and handling repetitive tasks.
-
+- Carefully controlling loop conditions avoids infinite loops.
+- Loops are essential tools for building interactive programs and handling repetitive tasks.
