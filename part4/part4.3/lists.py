@@ -58,41 +58,19 @@ while True:
     print("The list in order:", sorted(items))
 
 Question6: Please write a function named length which takes a list as its argument and returns the length of the list.
-def length(lst):
-    count = 0
-    for _ in lst:
-        count += 1
-    return count
-my_list = [1, 2, 3, 4, 5]
-result = length(my_list)
-print("The length is", result)
+def lenght_of_array(my_list):
+ result=len(my_list)
+ print("the lenght is ",result)
+lenght_of_array([4,8,9,7,5,6]) 
 
 Question7: Please write a function named mean, which takes a list of integers as an argument. The function returns the arithmetic mean of the values in the list.
-def mean(lst):
-    total = 0
-    count = 0
-    for num in lst:
-        total += num
-        count += 1
-    if count == 0:
-        return 0 
-    return total / count
-my_list = [1, 2, 3, 4, 5]
-result = mean(my_list)
-print("mean value is", result)
+def arithmetic_mean(my_list):
+    mean=sum(my_list)/len(my_list)
+    print("mean value is ",mean)
+arithmetic_mean([4,8,9,7,5,6]) 
 
 Question8: Please write a function named range_of_list, which takes a list of integers as an argument. The function returns the difference between the smallest and the largest value in the list.
-def range_of_list(lst):
-    if not lst:
-        return 0 
-    smallest = lst[0]
-    largest = lst[0]
-    for num in lst:
-        if num < smallest:
-            smallest = num
-        if num > largest:
-            largest = num
-    return largest - smallest
-my_list = [1, 2, 3, 4, 5]
-result = range_of_list(my_list)
-print("The range of the list is", result)
+def range_of_list(my_list):
+    range=max(my_list)-min(my_list)
+    print("the range is ",range)
+range_of_list([4,8,9,7,5,6])
